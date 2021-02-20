@@ -6,7 +6,7 @@ selectElement.addEventListener("change", (event) => {
 });
 
 function setup() {
-  createCanvas(600, 500, WEBGL);
+  createCanvas(window.innerWidth / 1.3, window.innerHeight / 1.3, WEBGL);
 }
 
 function draw() {
@@ -19,4 +19,8 @@ function draw() {
   noFill();
 
   attractor.draw();
+}
+
+function windowResized() {
+  createCanvas(window.innerWidth / 1.3, window.innerHeight / 1.3, WEBGL);
 }

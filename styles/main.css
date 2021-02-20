@@ -65,7 +65,7 @@ body {
   height: 2em;
   width: 10rem;
   line-height: 2em;
-  padding: 0.2em 3rem;
+  padding: 0.2em 3em;
   color: var(--darkest-brown);
   background-color: var(--soft-yellow);
   border: 1px solid var(--light-brown);
