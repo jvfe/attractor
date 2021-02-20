@@ -1,8 +1,11 @@
-const buildShape = (positionsVector) => {
+const buildShape = (positionsVector, xyz) => {
+  let [x, y, z] = xyz;
+  strokeWeight(8);
+  point(x, y, z);
   beginShape();
   for (const vector of positionsVector) {
-    vertex(vector.x, vector.y, vector.z);
     strokeWeight(3);
+    vertex(vector.x, vector.y, vector.z);
   }
   endShape();
 };
@@ -27,7 +30,7 @@ const Lorenz = () => {
 
     pointPositions.push(new p5.Vector(x, y, z));
     scale(1);
-    buildShape(pointPositions);
+    buildShape(pointPositions, [x, y, z]);
   };
 
   return { draw };
@@ -55,7 +58,7 @@ const Rossler = () => {
 
     rotateX(PI / 3.0);
     scale(1);
-    buildShape(pointPositions);
+    buildShape(pointPositions, [x, y, z]);
   };
 
   return { draw };
@@ -83,7 +86,7 @@ const Thomas = () => {
     pointPositions.push(new p5.Vector(x, y, z));
 
     scale(7);
-    buildShape(pointPositions);
+    buildShape(pointPositions, [x, y, z]);
   };
 
   return { draw };
