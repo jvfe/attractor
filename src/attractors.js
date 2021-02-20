@@ -87,3 +87,17 @@ const Thomas = () => {
 
   return { draw };
 };
+
+const selectAttractor = (name) => {
+  switch (name) {
+    case "lorenz":
+      return Lorenz();
+      break;
+    case "rossler":
+      return Rossler();
+      break;
+    case "thomas":
+      return Thomas();
+      break;
+  }
+};

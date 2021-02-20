@@ -1,4 +1,9 @@
-let attractor = Rossler();
+const selectElement = document.querySelector(".atrator");
+let attractor = selectAttractor(selectElement.value);
+
+selectElement.addEventListener("change", (event) => {
+  attractor = selectAttractor(selectElement.value);
+});
 
 function setup() {
   createCanvas(600, 500, WEBGL);
