@@ -1,3 +1,11 @@
+:root {
+  --darkest-brown: #493323;
+  --medium-brown: #91684a;
+  --light-brown: #eaac7f;
+  --soft-yellow: #ffdf91;
+  --lighter-yellow: #fae9be;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,4 +18,74 @@ html {
 
 body {
   min-height: 100%;
+  font-family: "Gudea", sans-serif;
+  font-weight: bold;
+  color: var(--medium-brown);
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  background: var(--lighter-yellow);
+}
+
+.head {
+  padding: 1rem;
+  color: var(--darkest-brown);
+  background: var(--light-brown);
+  border-bottom: 3px solid var(--darkest-brown);
+  text-align: center;
+}
+
+.title {
+  font-family: "Rancho", cursive;
+}
+
+.info {
+  text-align: center;
+  display: grid;
+  gap: 1em 0;
+  margin: 1em 0;
+}
+
+.dica {
+  font-size: 0.9em;
+}
+
+.ufrn {
+  font-size: 1.2rem;
+}
+
+.select-label {
+  font-weight: bold;
+}
+
+.atrator {
+  position: relative;
+  height: 2em;
+  width: 10rem;
+  line-height: 2em;
+  padding: 0.2em 3rem;
+  color: var(--darkest-brown);
+  background-color: var(--soft-yellow);
+  border: 1px solid var(--light-brown);
+  font-size: 1em;
+  font-weight: bold;
+  font-family: inherit;
+  border-radius: 0.2em;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.atrator:hover {
+  border-color: var(--medium-brown);
+}
+
+.canvas {
+  margin: 1em 0;
+  border: 1px solid var(--medium-brown);
+}
+
+a {
+  color: var(--darkest-brown);
 }

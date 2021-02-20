@@ -5,19 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Atratores</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gudea:ital,wght@0,400;0,700;1,400&family=Rancho&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/main.css" />
     <script src="src/lib/p5.js"></script>
   </head>
   <body>
-    <label
-      >Escolha um atrator:
-      <select class="atrator" name="atrator">
-        <option value="lorenz" selected>Lorenz</option>
-        <option value="rossler">Rossler</option>
-        <option value="thomas">Thomas</option>
-      </select>
-    </label>
-    <main></main>
+    <header class="head">
+      <h1 class="title">ATRATORES</h1>
+    </header>
+    <div class="container">
+      <div class="info">
+        <p class="ufrn">
+          Feito como atividade de Modelagem e Simulação Computacional - UFRN
+        </p>
+        <p class="dica">
+          Abaixo você tem um ambiente 3D, arraste o mouse e ajuste o scroll para
+          alterar a perspectiva.
+        </p>
+      </div>
+      <label class="select-label"
+        >Escolha um atrator:
+        <select class="atrator" name="atrator">
+          <option value="lorenz" selected>Lorenz</option>
+          <option value="rossler">Rossler</option>
+          <option value="thomas">Thomas</option>
+        </select>
+      </label>
+      <main class="canvas"></main>
+      <footer class="foot">
+        <p>
+          Construído por
+          <a target="_blank" href="https://jvfe.github.io/"
+            >João Vitor Ferreira</a
+          >
+        </p>
+      </footer>
+    </div>
     <script src="src/attractors.js"></script>
     <script src="src/index.js"></script>
   </body>

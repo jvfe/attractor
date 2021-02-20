@@ -10,12 +10,12 @@ function setup() {
 }
 
 function draw() {
-  background("#fafafa");
+  background("#fae9be");
 
   orbitControl(1, 1, 0.2);
 
   scale(5);
-  stroke(140, 123, 200, 0.3);
+  stroke("#493323");
   noFill();
 
   attractor.draw();

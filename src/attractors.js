@@ -26,7 +26,7 @@ const Lorenz = () => {
     z += dz;
 
     pointPositions.push(new p5.Vector(x, y, z));
-
+    scale(1);
     buildShape(pointPositions);
   };
 
@@ -54,6 +54,7 @@ const Rossler = () => {
     pointPositions.push(new p5.Vector(x, y, z));
 
     rotateX(PI / 3.0);
+    scale(1);
     buildShape(pointPositions);
   };
 
@@ -81,7 +82,7 @@ const Thomas = () => {
 
     pointPositions.push(new p5.Vector(x, y, z));
 
-    scale(5);
+    scale(7);
     buildShape(pointPositions);
   };
 
